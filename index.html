@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>MOSAVID</title>
+    <link rel="icon" type="image/png" href="images/logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+</head>
+
+<body class="light-mode">
+<header>
+    <a href="index.html" class="logo-group">
+        <img src="images/s-logo.png" alt="MOSAVID Logo" class="brand-logo" />
+        <div class="logo">MOSAVID</div>
+    </a>
+    <button class="hamburger-menu" aria-label="Open Menu">&#9776;</button>
+    <nav id="nav-menu">
+        <ul class="nav-links">
+            <li><a href="productos.html">Productos</a></li>
+            <li><a href="nosotros.html">Sobre Nosotros</a></li>
+            <li><a href="formulario.html">Contactanos</a></li>
+        </ul>
+    </nav>
+    <div class="cta-buttons-container" id="cta-container">
+        <div class="search-overlay-box" id="search-box-container">
+            <input type="text" placeholder="Buscar..." class="search-input" id="search-input-field" />
+        </div>
+        <div class="cta-buttons">
+            <div class="options-dropdown">
+                <button class="options-btn" aria-label="Toggle Language">
+                    <img src="images/language.png" class="nav-icon" alt="Language" />
+                </button>
+                <div class="options">
+                    <a href="indexS.html">Español</a>
+                    <a href="index.html">English</a>
+                </div>
+            </div>
+            <button class="icon-action-btn" id="theme-toggle" aria-label="Toggle Theme">
+                <img src="images/dark.png" class="nav-icon" id="theme-icon" alt="Toggle Theme Layout" />
+            </button>
+            <a href="buscar.html" class="icon-action-btn" id="search-trigger-btn" aria-label="Search">
+                <img src="images/search.png" class="nav-icon" alt="Search" />
+            </a>
+            <a href="#" class="icon-action-btn" id="cart-trigger-btn" aria-label="Shopping Cart">
+                <img src="images/shop.png" class="nav-icon" alt="Shopping Cart" />
+            </a>
+        </div>
+    </div>
+</header>
+
+<section id="inicio">
+    <div class="threads-stage" aria-hidden="true">
+        <canvas class="threads" id="threadsCanvas"></canvas>
+    </div>
+
+    <p class="overline">Movimiento · Salud · Vida</p>
+    <h1>Creada para quienes<br/>se niegan a<br/><em>envejecer en silencio.</em></h1>
+    <p class="hero-sub">Una marca de Baja California que eligió la honestidad como ingrediente principal.</p>
+    <div class="hero-rule"></div>
+    <div class="hero-products">
+        <span>LUKARA Serum</span>
+        <span>✦</span>
+        <span>LUKARA Day</span>
+        <span>✦</span>
+        <span>LUKARA Night</span>
+    </div>
+</section>
+
+<section class="vo-section">
+    <div class="container-wide">
+    <span class="label">Filosofía</span>
+    <div class="rule"></div>
+    <h2>Lo que nos define no es lo que vendemos.<br/><em>Es lo que nos negamos a vender.</em></h2>
+    <div class="v-wrapper bg-primary">
+        <div class="o-wrapper pt-11 pt-4sm">
+            <!-- El contenedor flex principal visto en tu inspector -->
+            <div class="d-f fd-c ai-s vo-stack-track">
+                
+                <!-- Elemento 01 -->
+                <div class="pin-spacer" data-index="1">
+                    <div class="vo-card-content">
+                        <div class="vo-card-left">01</div>
+                        <div class="vo-card-right">
+                            <h3 class="vo-card-title">Honestidad radica</h3>
+                            <div class="vo-card-body">
+                                <p class="vo-card-desc">No decimos nada que no podamos comprobar. Si un activo tiene evidencia sólida, lo nombramos con claridad. Si no la tiene, no lo usamos para venderte.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Elemento 02 -->
+                <div class="pin-spacer" data-index="2">
+                    <div class="vo-card-content">
+                        <div class="vo-card-left">02</div>
+                        <div class="vo-card-right">
+                            <h3 class="vo-card-title">Formulación sin atajos</h3>
+                            <div class="vo-card-body">
+                                <p class="vo-card-desc">Cada fórmula se desarrolla con concentraciones funcionales de activos seleccionados del mundo. Nada de "presencia cosmética" que solo sirve para aparecer en la etiqueta.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Elemento 03 -->
+                <div class="pin-spacer" data-index="3">
+                    <div class="vo-card-content">
+                        <div class="vo-card-left">03</div>
+                        <div class="vo-card-right">
+                            <h3 class="vo-card-title">Diseñadas en México, para el mundo</h3>
+                            <div class="vo-card-body">
+                                <p class="vo-card-desc">Formúlas desarrolladas bajo estrictos protocolos de manufactura. El origen es nuestro orgullo, no nuestra disculpa.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Elemento 04 -->
+                <div class="pin-spacer" data-index="4">
+                    <div class="vo-card-content">
+                        <div class="vo-card-left">04</div>
+                        <div class="vo-card-right">
+                            <h3 class="vo-card-title">Lujo con propósito</h3>
+                            <div class="vo-card-body">
+                                <p class="vo-card-desc">Ser premium significa que cada decisión - ingrediente, textura, envase - existe por una razón concreta. No por apariencia. Por función.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="knowledge-section">
+  <div class="background-lines-wrapper">
+    <span class="line-marker top-left"></span>
+    <span class="line-marker top-right"></span>
+    <span class="line-marker bottom-left"></span>
+    <span class="line-marker bottom-right"></span>
+    <span class="line-marker top-center"></span>
+    <span class="line-marker top-bottom"></span>
+  </div>
+
+  <section class="scroll-text-container">
+    <h1 class="scroll-text text-main" data-text="Una filosofía que puedes ver en la piel."></h1>
+    
+    <p class="scroll-text scroll-text-secondary text-sub" data-text="LUKARA es la primera línea de MOSAVID. Cada producto es la expresión directa de todo lo que creemos."></p>
+    
+    <p class="tagline-muted">DESCUBRE MÁS SOBRE NOSOTROS</p>
+
+    <div class="hero-button-group">
+      <a href="productos.html" class="hero-btn primary-btn">
+        <span>Conoce la línea LUKARA</span>
+        <div class="btn-arrow">→</div>
+      </a>
+      <a href="formulario.html" class="hero-btn secondary-btn">
+        <span>Ponte en contacto</span>
+      </a>
+    </div>
+  </section>
+</div>
+
+<!-- Notification -->
+<div class="store-modal-overlay" id="store-coming-soon-modal">
+    <div class="store-modal-content">
+        <button class="store-modal-close" id="close-modal-btn" aria-label="Cerrar ventana">&times;</button>
+        
+        <div class="store-modal-text">
+            <h2>Próximamente</h2>
+            <p>Nuestra tienda en línea y productos aún no están disponibles. Estamos preparando fórmulas excepcionales para ti.</p>
+            <button class="store-modal-action" id="close-modal-action-btn">Entendido</button>
+        </div>
+    </div>
+</div>
+
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-logo-contact">
+                <img src="images/logo.png" alt="DTRE Logo" class="footer-logo">
+                <div class="footer-social">
+                    <a href="#"><img src="images/facebook.png" alt="Facebook"></a>
+                    <a href="#"><img src="images/instagram.png" alt="Instagram"></a>
+                    <a href="#"><img src="images/whatsapp.png" alt="Whatapp"></a>
+            </div>
+                <a href="formulario.html" class="contact-button">Contactanos</a>
+            </div>
+            <div class="footer-links">
+                <div>
+                    <h4>Sobre Nosotros</h4>
+                    <ul>
+                        <li><a href="aboutus.html">Nuestra Historia</a></li>
+                        <li><a href="aboutus.html">Nuestra Misión</a></li>
+                        <li><a href="aboutus.html">Quiénes Somos</a></li>
+                        <li><a href="aboutus.html">Fundadora</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Productos</h4>
+                    <ul>
+                        <li><a href="lukaraS.html">Lukara - Serum</a></li>
+                        <li><a href="lukaraD.html">Lukara - Day</a></li>
+                        <li><a href="lukaraN.html">Lukara - Night</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Recursos</h4>
+                    <ul>
+                        <li><a href="faq.html">Preguntas Frecuentes</a></li>
+                        <li><a href="#">Anuncios</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Beta</h4>
+                    <ul>
+                        <li><a href="formulario.html">Mandar Sugerencias</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-legal">
+            <a href="legal.html">Nota Legal</a> |
+            <a href="legal.html">Política de Privacidad</a> |
+            <a href="legal.html">Política de Cookies</a>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Productos</title>
+    <link rel="icon" type="image/png" href="images/logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+</head>
+<body class="light-mode" class="products-page">
+<header>
+    <a href="index.html" class="logo-group">
+        <img src="images/s-logo.png" alt="MOSAVID Logo" class="brand-logo" />
+        <div class="logo">MOSAVID</div>
+    </a>
+    <button class="hamburger-menu" aria-label="Open Menu">&#9776;</button>
+    <nav id="nav-menu">
+        <ul class="nav-links">
+            <li><a href="productos.html">Productos</a></li>
+            <li><a href="nosotros.html">Sobre Nosotros</a></li>
+            <li><a href="formulario.html">Contactanos</a></li>
+        </ul>
+    </nav>
+    <div class="cta-buttons-container" id="cta-container">
+        <div class="search-overlay-box" id="search-box-container">
+            <input type="text" placeholder="Buscar..." class="search-input" id="search-input-field" />
+        </div>
+        <div class="cta-buttons">
+            <div class="options-dropdown">
+                <button class="options-btn" aria-label="Toggle Language">
+                    <img src="images/language.png" class="nav-icon" alt="Language" />
+                </button>
+                <div class="options">
+                    <a href="indexS.html">Español</a>
+                    <a href="index.html">English</a>
+                </div>
+            </div>
+            <button class="icon-action-btn" id="theme-toggle" aria-label="Toggle Theme">
+                <img src="images/dark.png" class="nav-icon" id="theme-icon" alt="Toggle Theme Layout" />
+            </button>
+            <a href="buscar.html" class="icon-action-btn" id="search-trigger-btn" aria-label="Search">
+                <img src="images/search.png" class="nav-icon" alt="Search" />
+            </a>
+            <a href="#" class="icon-action-btn" id="cart-trigger-btn" aria-label="Shopping Cart">
+                <img src="images/shop.png" class="nav-icon" alt="Shopping Cart" />
+            </a>
+        </div>
+    </div>
+</header>
+
+<main class="scroll-container">
+    <div class="sticky-viewport-container">
+        <div class="flip-wrapper" id="dynamic-showcase-card">
+            <div class="flip-card">
+                <div class="card-face front">
+                    <img src="images/mainProduct.png" alt="Mosavid Premium Product Overview">
+                </div>
+                <div class="card-face back">
+                    <img src="images/mainProductWhite.png" alt="Mosavid Premium Product Overview">
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <section class="hero-section">
+            <div class="v-rain-stage" aria-hidden="true">
+                <canvas id="goldRainCanvas"></canvas>
+            </div>
+
+            <h1 class="giant-title">
+                <span>LO QUE NOS DEFINE NO ES</span>
+                <span>LO QUE VENDEMOS.</span>
+                <span><em>ES LO QUE NOS NEGAMOS A VENDER</em></span>
+            </h1>
+
+            <div class="hero-footer-left">Nuestra Filosofía</div>
+
+            <div class="hero-footer-right">©2026</div>
+        </section>
+
+        <section class="details-section">
+            <div class="details-grid">
+                
+                <div class="grid-col left-col">
+                    <h2 class="section-trigger">¡Hola!</h2>
+                    <p class="highlight-text">
+                        En <strong>Mosavid</strong>, diseñamos y distribuimos superficies y recubrimientos premium que transforman espacios ordinarios en obras de arte arquitectónicas vibrantes.
+                    </p>
+                </div>
+
+                <div class="center-target-slot" id="grid-target-box"></div>
+
+                <div class="grid-col right-col">
+                    <p class="description-text">
+                        Nuestra filosofía une la precisión técnica y la vanguardia estética. Cada colección de mosaicos y acabados está pensada para resistir el tiempo mientras define tendencias de diseño global.
+                    </p>
+                    <p class="description-text">
+                        Colaboramos de la mano con arquitectos e interioristas internacionales, proveyendo soluciones personalizadas listas para proyectos comerciales y residenciales de alto perfil.
+                    </p>
+                    <a href="#products-container" class="cta-link">
+                        Ver Productos 
+                        <span class="arrow-box">↗</span>
+                    </a>
+                </div>
+
+            </div>
+        </section>
+    
+    <section id="products-container">
+        <div class="container-wide">
+            <span class="label">Línea LUKARA G1</span>
+            <div class="rule"></div>
+            <h2>Tres fórmulas mexicanas<br/>que trabajan<br/><em>como un sistema.</em></h2>
+            <div class="linea-intro">
+                <p>Activo insignia compartido: GHK-Cu (péptido de cobre), protegido en cada fórmula con envase airless opaco y ajuste de pH.</p>
+            </div>
+            
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="code"></div>
+                    <div class="product-name">LUKARA<br/>Serum</div>
+                    <div class="product-sub"></div>
+                    <p>Sérum concentrado de longevidad, textura gel ligera. El tratamiento base del sistema, mañana y noche.</p>
+                    <div class="when">Día y noche · No contiene SPF</div>
+                    <a href="lukaraS.html" class="btn btn-outline-ivory">Ver producto</a>
+                </div>
+                <div class="product-card">
+                    <div class="code"></div>
+                    <div class="product-name">LUKARA<br/>Day</div>
+                    <div class="product-sub"></div>
+                    <p>Crema-fluido de día antioxidante y antipolución. Ligera, de rápida absorción, ideal bajo el maquillaje.</p>
+                    <div class="when">Solo de día · No contiene SPF</div>
+                    <a href="lukaraD.html" class="btn btn-outline-ivory">Ver producto</a>
+                </div>
+                <div class="product-card">
+                    <div class="code"></div>
+                    <div class="product-name">LUKARA<br/>Night</div>
+                    <div class="product-sub"></div>
+                    <p>Crema de noche rica y envolvente. Retinol vegetal + retinol. Para la renovación nocturna del aspecto de la piel.</p>
+                    <div class="when">Solo de noche · Contiene retinol</div>
+                    <a href="lukaraN.html" class="btn btn-outline-ivory">Ver producto</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="compare-section">
+        <div class="container-wide">
+            <span class="label">Compara la línea</span>
+            <div class="rule"></div>
+            <h2>¿Cuál es <em>el tuyo?</em></h2>
+            <table class="compare-table">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>LUKARA Serum</th>
+                        <th>LUKARA Day</th>
+                        <th>LUKARA Night</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>Código</td><td></td><td></td><td></td></tr>
+                    <tr><td>Tipo</td><td>Sérum ligero</td><td>Crema-fluido día</td><td>Crema rica noche</td></tr>
+                    <tr><td>Momento de uso</td><td>Día y noche</td><td>Solo de día</td><td>Solo de noche</td></tr>
+                    <tr><td>Enfoque</td><td>Tratamiento base</td><td>Protección antioxidante</td><td>Renovación y nutrición</td></tr>
+                    <tr><td>¿Lleva retinol?</td><td class="no">No (sí bakuchiol)</td><td class="no">No (sí bakuchiol)</td><td class="yes">Sí · Retinol + Bakuchiol</td></tr>
+                    <tr><td>¿Lleva SPF?</td><td class="no">No</td><td class="no">No</td><td class="no">No</td></tr>
+                    <tr><td>Envase</td><td></td><td></td><td></td></tr>
+                    <tr><td>Contenido</td><td>30 g</td><td>30 g</td><td>30 g</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+<section id="ciencia">
+    <div class="container-wide">
+        <span class="label">La Ciencia</span>
+        <div class="rule"></div>
+        <h2>Ingredientes que hacen<br/>lo que <em>dicen hacer.</em></h2>
+        <p class="science-intro">Seleccionamos activos con trayectoria en cosmética. Cada uno está presente en nuestras fórmulas en concentraciones funcionales, no solo en la etiqueta.</p>
+        <span class="science-note">Nota honesta: son ingredientes cosméticos. Actúan sobre el aspecto, la textura y la sensación de la piel sana. No son medicamentos.</span>
+
+        <div class="ingredients-grid">
+            <div class="ingredient">
+                <div class="ingredient-name">GHK-Cu</div>
+                <div class="ingredient-sub">Copper Tripeptide-1 · Activo insignia</div>
+                <p>Uno de los péptidos más estudiados en cosmética por su papel en el aspecto de firmeza y la apariencia general de la piel. En LUKARA lo protegemos al máximo: pH ajustado y envase airless opaco.</p>
+                <span class="ingredient-tag">Activo insignia · Los 3 productos</span>
+            </div>
+            <div class="ingredient">
+                <div class="ingredient-name">Bakuchiol</div>
+                <div class="ingredient-sub">Alternativa botánica tipo retinol</div>
+                <p>Ingrediente vegetal valorado por mejorar el aspecto de las líneas de expresión y la uniformidad del tono, sin la irritación que muchas personas asocian al retinol. Presente en los 3 productos.</p>
+                <span class="ingredient-tag">Toda la línea</span>
+            </div>
+            <div class="ingredient">
+                <div class="ingredient-name">Niacinamida</div>
+                <div class="ingredient-sub">Vitamina B3</div>
+                <p>De los activos mejor documentados en cosmética para el aspecto del tono, la textura y la sensación de confort de la piel.</p>
+                <span class="ingredient-tag">Toda la línea</span>
+            </div>
+            <div class="ingredient">
+                <div class="ingredient-name">Ácido hialurónico</div>
+                <div class="ingredient-sub">Alto y bajo peso molecular</div>
+                <p>Doble acción: superficie y profundidad aparente. Piel que se ve y se siente más tersa desde el primer uso.</p>
+                <span class="ingredient-tag">Toda la línea</span>            
+            </div>
+            <div class="ingredient">
+                <div class="ingredient-name">Complejo de Ceramidas</div>
+                <div class="ingredient-sub">NP · AP · EOP + Colesterol + Fitoesfingosina</div>
+                <p>Ayuda a la sensación de confort y a una piel de aspecto más resistente y menos apagado. Estructura de barrera visible.</p>
+                <span class="ingredient-tag">Toda la línea</span>
+            </div>
+            <div class="ingredient">
+                <div class="ingredient-name">Ergotioneína · Carnosina<br/>Pterostilbeno · Ácido ferúlico</div>
+                <div class="ingredient-sub">Antioxidantes de longevidad</div>
+                <p>Ayudan a mantener una piel de aspecto saludable y luminoso frente al desgaste diario del ambiente.</p>
+                <span class="ingredient-tag">Toda la línea</span>
+            </div>
+            <div class="ingredient">
+                <div class="ingredient-name">Ácido tranexámico<br/>+ Alfa-arbutina</div>
+                <div class="ingredient-sub">Uniformidad del tono</div>
+                <p>Para una apariencia más uniforme del tono y el aspecto de las manchas.</p>
+                <span class="ingredient-tag">Serum · Day</span>
+            </div>
+            <div class="ingredient">
+                <div class="ingredient-name">Ectoína</div>
+                <div class="ingredient-sub">Protección ambiental</div>
+                <p>Aporta sensación de piel protegida frente a los agresores del día. Ideal para piel expuesta al ambiente urbano.</p>
+                <span class="ingredient-tag">Serum · Day · Night</span>
+            </div>
+            <div class="ingredient">
+                <div class="ingredient-name">Retinyl Palmitate</div>
+                <div class="ingredient-sub">Vitamina A · Solo en LUKARA Night</div>
+                <p>Forma estabilizada de retinol que acompaña la renovación nocturna del aspecto de la piel. Solo de noche; no usar en embarazo.</p>
+                <span class="ingredient-tag">Solo LUKARA Night</span>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Notification -->
+<div class="store-modal-overlay" id="store-coming-soon-modal">
+    <div class="store-modal-content">
+        <button class="store-modal-close" id="close-modal-btn" aria-label="Cerrar ventana">&times;</button>
+        
+        <div class="store-modal-text">
+            <h2>Próximamente</h2>
+            <p>Nuestra tienda en línea y productos aún no están disponibles. Estamos preparando fórmulas excepcionales para ti.</p>
+            <button class="store-modal-action" id="close-modal-action-btn">Entendido</button>
+        </div>
+    </div>
+</div>
+</main>
+
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-logo-contact">
+                <img src="images/logo.png" alt="DTRE Logo" class="footer-logo">
+                <div class="footer-social">
+                    <a href="#"><img src="images/facebook.png" alt="Facebook"></a>
+                    <a href="#"><img src="images/instagram.png" alt="Instagram"></a>
+                    <a href="#"><img src="images/whatsapp.png" alt="Whatapp"></a>
+            </div>
+                <a href="formulario.html" class="contact-button">Contactanos</a>
+            </div>
+            <div class="footer-links">
+                <div>
+                    <h4>Sobre Nosotros</h4>
+                    <ul>
+                        <li><a href="aboutus.html">Nuestra Historia</a></li>
+                        <li><a href="aboutus.html">Nuestra Misión</a></li>
+                        <li><a href="aboutus.html">Quiénes Somos</a></li>
+                        <li><a href="aboutus.html">Fundadora</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Productos</h4>
+                    <ul>
+                        <li><a href="lukaraS.html">Lukara - Serum</a></li>
+                        <li><a href="lukaraD.html">Lukara - Day</a></li>
+                        <li><a href="lukaraN.html">Lukara - Night</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Recursos</h4>
+                    <ul>
+                        <li><a href="faq.html">Preguntas Frecuentes</a></li>
+                        <li><a href="#">Anuncios</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Beta</h4>
+                    <ul>
+                        <li><a href="formulario.html">Mandar Sugerencias</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-legal">
+            <a href="legal.html">Nota Legal</a> |
+            <a href="legal.html">Política de Privacidad</a> |
+            <a href="legal.html">Política de Cookies</a>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

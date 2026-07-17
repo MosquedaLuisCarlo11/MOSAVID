@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Preguntas Frecuentes</title>
+    <link rel="icon" type="image/png" href="images/logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+</head>
+<body class="light-mode">
+<header>
+    <a href="index.html" class="logo-group">
+        <img src="images/s-logo.png" alt="MOSAVID Logo" class="brand-logo" />
+        <div class="logo">MOSAVID</div>
+    </a>
+    <button class="hamburger-menu" aria-label="Open Menu">&#9776;</button>
+    <nav id="nav-menu">
+        <ul class="nav-links">
+            <li><a href="productos.html">Productos</a></li>
+            <li><a href="nosotros.html">Sobre Nosotros</a></li>
+            <li><a href="formulario.html">Contactanos</a></li>
+        </ul>
+    </nav>
+    <div class="cta-buttons-container" id="cta-container">
+        <div class="search-overlay-box" id="search-box-container">
+            <input type="text" placeholder="Buscar..." class="search-input" id="search-input-field" />
+        </div>
+        <div class="cta-buttons">
+            <div class="options-dropdown">
+                <button class="options-btn" aria-label="Toggle Language">
+                    <img src="images/language.png" class="nav-icon" alt="Language" />
+                </button>
+                <div class="options">
+                    <a href="indexS.html">Español</a>
+                    <a href="index.html">English</a>
+                </div>
+            </div>
+            <button class="icon-action-btn" id="theme-toggle" aria-label="Toggle Theme">
+                <img src="images/dark.png" class="nav-icon" id="theme-icon" alt="Toggle Theme Layout" />
+            </button>
+            <a href="buscar.html" class="icon-action-btn" id="search-trigger-btn" aria-label="Search">
+                <img src="images/search.png" class="nav-icon" alt="Search" />
+            </a>
+            <a href="#" class="icon-action-btn" id="cart-trigger-btn" aria-label="Shopping Cart">
+                <img src="images/shop.png" class="nav-icon" alt="Shopping Cart" />
+            </a>
+        </div>
+    </div>
+</header>
+<main class="faq-page-wrapper">
+    <section class="faq-hero">
+        <h1 class="faq-main-title">Preguntas Frecuentes</h1>
+        <p class="faq-subtitle">Encuentra respuestas rápidas sobre nuestras fórmulas, rutinas y compromisos.</p>
+        <hr class="faq-divider" />
+    </section>
+
+    <div class="faq-layout-container">
+        <aside class="faq-sidebar">
+            <div class="faq-search-wrapper">
+                <input type="text" id="faq-search-input" placeholder="Buscar preguntas..." aria-label="Buscar en preguntas frecuentes">
+                <span class="faq-search-icon">🔍</span>
+            </div>
+
+            <div class="faq-nav-group">
+                <span class="faq-jump-to">IR A SECCIÓN</span>
+                <ul class="faq-category-links">
+                    <li><button type="button" class="faq-nav-link active" data-target="productos">Productos y Rutinas</button></li>
+                    <li><button type="button" class="faq-nav-link" data-target="sostenibilidad">Sostenibilidad y Envases</button></li>
+                    <li><button type="button" class="faq-nav-link" data-target="envios">Envíos y Pedidos</button></li>
+                </ul>
+            </div>
+        </aside>
+
+        <section class="faq-content-area">
+            <div class="faq-section-block active" id="sec-productos">
+                <h2 class="faq-section-heading">Productos y Rutinas</h2>        
+                <div class="faq-accordion-item">
+                    <button class="faq-accordion-trigger">
+                        <span>¿En qué orden debo aplicar la línea Lukara?</span>
+                        <span class="faq-icon-status"></span>
+                    </button>
+                    <div class="faq-accordion-content">
+                        <p>Para obtener resultados óptimos, recomendamos aplicar primero nuestro Serum sobre la piel limpia. Por la mañana, continúa con Lukara - Day para proteger e hidratar tu piel durante el día. Por la noche, sella tu rutina con la crema rica Lukara - Night para potenciar la regeneración celular mientras descansas.</p>
+                    </div>
+                </div>
+
+                <div class="faq-accordion-item">
+                    <button class="faq-accordion-trigger">
+                        <span>¿Los productos de MOSAVID son aptos para pieles sensibles?</span>
+                        <span class="faq-icon-status"></span>
+                    </button>
+                    <div class="faq-accordion-content">
+                        <p>Sí, nuestras fórmulas están testadas dermatológicamente y diseñadas con activos calmantes y biocompatibles que respetan la barrera cutánea, minimizando el riesgo de irritación en pieles sensibles.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-section-block" id="sec-sostenibilidad">
+                <h2 class="faq-section-heading">Sostenibilidad y Envases</h2>
+
+                <div class="faq-accordion-item">
+                    <button class="faq-accordion-trigger">
+                        <span>¿Cómo funciona el sistema de reciclaje de envases?</span>
+                        <span class="faq-icon-status"></span>
+                    </button>
+                    <div class="faq-accordion-content">
+                        <p>Nuestros frascos utilizan tecnología 100% reciclable. Una vez terminado tu producto, puedes separar las válvulas del cristal o plástico PET y depositarlos en sus respectivos contenedores de reciclaje local. Consulta nuestro portal de sostenibilidad para más detalles.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-section-block" id="sec-envios">
+                <h2 class="faq-section-heading">Envíos y Pedidos</h2>
+                <div class="faq-accordion-item">
+                    <button class="faq-accordion-trigger">
+                        <span>¿Cuánto tardará en llegar mi pedido?</span>
+                        <span class="faq-icon-status"></span>
+                    </button>
+                    <div class="faq-accordion-content">
+                        <p>Los envíos estándar toman entre 2 y 4 días laborables dentro de la península. Recibirás un enlace de seguimiento en tu correo electrónico tan pronto como el paquete salga de nuestros almacenes.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- Notification -->
+<div class="store-modal-overlay" id="store-coming-soon-modal">
+    <div class="store-modal-content">
+        <button class="store-modal-close" id="close-modal-btn" aria-label="Cerrar ventana">&times;</button>
+        
+        <div class="store-modal-text">
+            <h2>Próximamente</h2>
+            <p>Nuestra tienda en línea y productos aún no están disponibles. Estamos preparando fórmulas excepcionales para ti.</p>
+            <button class="store-modal-action" id="close-modal-action-btn">Entendido</button>
+        </div>
+    </div>
+</div>
+</main>
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-logo-contact">
+                <img src="images/logo.png" alt="DTRE Logo" class="footer-logo">
+                <div class="footer-social">
+                    <a href="#"><img src="images/facebook.png" alt="Facebook"></a>
+                    <a href="#"><img src="images/instagram.png" alt="Instagram"></a>
+                    <a href="#"><img src="images/whatsapp.png" alt="Whatapp"></a>
+            </div>
+                <a href="formulario.html" class="contact-button">Contactanos</a>
+            </div>
+            <div class="footer-links">
+                <div>
+                    <h4>Sobre Nosotros</h4>
+                    <ul>
+                        <li><a href="aboutus.html">Nuestra Historia</a></li>
+                        <li><a href="aboutus.html">Nuestra Misión</a></li>
+                        <li><a href="aboutus.html">Quiénes Somos</a></li>
+                        <li><a href="aboutus.html">Fundadora</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Productos</h4>
+                    <ul>
+                        <li><a href="lukaraS.html">Lukara - Serum</a></li>
+                        <li><a href="lukaraD.html">Lukara - Day</a></li>
+                        <li><a href="lukaraN.html">Lukara - Night</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Recursos</h4>
+                    <ul>
+                        <li><a href="faq.html">Preguntas Frecuentes</a></li>
+                        <li><a href="#">Anuncios</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Beta</h4>
+                    <ul>
+                        <li><a href="formulario.html">Mandar Sugerencias</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-legal">
+            <a href="legal.html">Nota Legal</a> |
+            <a href="legal.html">Política de Privacidad</a> |
+            <a href="legal.html">Política de Cookies</a>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

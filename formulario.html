@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Formulario</title>
+    <link rel="icon" type="image/png" href="images/logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+</head>
+<body class="light-mode">
+<header>
+    <a href="index.html" class="logo-group">
+        <img src="images/s-logo.png" alt="MOSAVID Logo" class="brand-logo" />
+        <div class="logo">MOSAVID</div>
+    </a>
+    <button class="hamburger-menu" aria-label="Open Menu">&#9776;</button>
+    <nav id="nav-menu">
+        <ul class="nav-links">
+            <li><a href="productos.html">Productos</a></li>
+            <li><a href="nosotros.html">Sobre Nosotros</a></li>
+            <li><a href="formulario.html">Contactanos</a></li>
+        </ul>
+    </nav>
+    <div class="cta-buttons-container" id="cta-container">
+        <div class="search-overlay-box" id="search-box-container">
+            <input type="text" placeholder="Buscar..." class="search-input" id="search-input-field" />
+        </div>
+        <div class="cta-buttons">
+            <div class="options-dropdown">
+                <button class="options-btn" aria-label="Toggle Language">
+                    <img src="images/language.png" class="nav-icon" alt="Language" />
+                </button>
+                <div class="options">
+                    <a href="indexS.html">Español</a>
+                    <a href="index.html">English</a>
+                </div>
+            </div>
+            <button class="icon-action-btn" id="theme-toggle" aria-label="Toggle Theme">
+                <img src="images/dark.png" class="nav-icon" id="theme-icon" alt="Toggle Theme Layout" />
+            </button>
+            <a href="buscar.html" class="icon-action-btn" id="search-trigger-btn" aria-label="Search">
+                <img src="images/search.png" class="nav-icon" alt="Search" />
+            </a>
+            <a href="#" class="icon-action-btn" id="cart-trigger-btn" aria-label="Shopping Cart">
+                <img src="images/shop.png" class="nav-icon" alt="Shopping Cart" />
+            </a>
+        </div>
+    </div>
+</header>
+<main class="form-section-wrapper">
+  <div class="form-wizard-container">
+    
+    <div class="wizard-header">
+      <div class="step-tab active" data-step="1">
+        <span class="step-num">I</span> Tu Nombre
+      </div>
+      <div class="step-tab" data-step="2">
+        <span class="step-num">II</span> Método de Contacto
+      </div>
+      <div class="step-tab" data-step="3">
+        <span class="step-num">III</span> Nota
+      </div>
+    </div>
+
+    <form id="multi-step-form" novalidate>
+      
+      <div class="form-step active" id="step-1">
+        <p class="step-subtitle">Paso 1</p>
+        <h2 class="step-title">Tu Nombre</h2>
+        <p class="step-description">Por favor, introduce tus datos para saber con quién nos estamos comunicando.</p>
+
+        <div class="form-grid">
+          <div class="input-group">
+            <label for="first-name">Nombre<span class="required">*</span></label>
+            <input type="text" id="first-name" placeholder="Ingresa tu nombre" required>
+            <span class="error-msg">El nombre es obligatorio.</span>
+          </div>
+          <div class="input-group">
+            <label for="last-name">Apellido<span class="required">*</span></label>
+            <input type="text" id="last-name" placeholder="Ingresa tu apellido" required>
+            <span class="error-msg">El apellido es obligatorio.</span>
+          </div>
+          <div class="input-group full-width">
+            <label for="nickname">Apodo / Cómo te llamamos <span class="optional">(Opcional)</span></label>
+            <input type="text" id="nickname" placeholder="¿Cómo prefieres que te llamemos?">
+          </div>
+        </div>
+      </div>
+
+      <div class="form-step" id="step-2">
+        <p class="step-subtitle">Paso 2</p>
+        <h2 class="step-title">Método de Contacto</h2>
+        <p class="step-description">Selecciona cómo prefieres que nuestro equipo se ponga en contacto contigo.</p>
+
+<div class="contact-preference-grid">
+  <label class="pref-card">
+    <input type="radio" name="contact-method" value="email" checked>
+    <div class="pref-content">
+      <img src="images/mail.png" alt="Email" class="pref-image-icon">
+      <span class="pref-label">Correo Electrónico</span>
+    </div>
+  </label>
+  <label class="pref-card">
+    <input type="radio" name="contact-method" value="phone">
+    <div class="pref-content">
+      <img src="images/phone.png" alt="Teléfono" class="pref-image-icon">
+      <span class="pref-label">Teléfono / Celular</span>
+    </div>
+  </label>
+</div>
+
+        <div class="form-grid" style="margin-top: 1.5rem;">
+          <div class="input-group full-width" id="email-field-group">
+            <label for="contact-email">Dirección de Correo<span class="required">*</span></label>
+            <input type="email" id="contact-email" placeholder="ejemplo@correo.com">
+            <span class="error-msg">Por favor, ingresa un correo electrónico válido.</span>
+          </div>
+          <div class="input-group full-width hidden" id="phone-field-group">
+            <label>Número de Teléfono<span class="required">*</span></label>
+            <div class="phone-split-container">
+              <select id="country-code" class="phone-country-select">
+                <option value="+1">🇺🇸 +1 (US)</option>
+                <option value="+34" selected>🇪🇸 +34 (ES)</option>
+                <option value="+52">🇲🇽 +52 (MX)</option>
+                <option value="+57">🇨🇴 +57 (CO)</option>
+                <option value="+54">🇦🇷 +54 (AR)</option>
+                <option value="+56">🇨🇱 +56 (CL)</option>
+                <option value="+51">🇵🇪 +51 (PE)</option>
+              </select>
+              <input type="tel" id="contact-phone" class="phone-local-input" placeholder="600-000000" maxlength="11">
+            </div>
+            <span class="error-msg">Por favor, ingresa un número de teléfono válido.</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="form-step" id="step-3">
+        <p class="step-subtitle">Paso 3</p>
+        <h2 class="step-title">Nota</h2>
+        <p class="step-description">Ayúdanos a categorizar tu solicitud y déjanos tus comentarios detallados abajo.</p>
+
+        <div class="form-grid">
+          <div class="input-group full-width">
+            <label>Selecciona una Categoría<span class="required">*</span></label>
+            <div class="category-selector">
+              <button type="button" class="cat-btn active" data-category="concert">Consulta de Producto</button>
+              <button type="button" class="cat-btn" data-category="product">Inquietud</button>
+              <button type="button" class="cat-btn" data-category="touch">Mantenerse en Contacto</button>
+              <button type="button" class="cat-btn" data-category="other">Otro</button>
+            </div>
+            <input type="hidden" id="selected-category" value="concert">
+          </div>
+
+          <div class="input-group full-width" style="margin-top: 0.5rem;">
+            <label for="contact-reason">Motivo del Contacto<span class="required">*</span></label>
+            <textarea id="contact-reason" rows="5" placeholder="Escribe tus dudas, inquietudes o comentarios aquí..." required></textarea>
+            <span class="error-msg">Por favor, escribe el motivo de tu mensaje.</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mensaje Exitoso Dinámico (Oculto inicialmente) -->
+      <div class="success-message-box hidden" id="success-screen">
+        <span class="success-icon">✓</span>
+        <h2 class="success-title">¡Formulario Enviado!</h2>
+        <p class="success-text">Tu solicitud ha sido procesada con éxito. Nos pondremos en contacto contigo muy pronto.</p>
+      </div>
+
+      <!-- Pie de página de navegación -->
+      <div class="wizard-footer" id="wizard-footer-nav">
+        <button type="button" id="prev-btn" class="nav-btn btn-secondary invisible">
+          ‹ Atrás
+        </button>
+        <button type="button" id="next-btn" class="nav-btn btn-primary">
+          Siguiente Paso ›
+        </button>
+      </div>
+
+    </form>
+  </div>
+
+  <!-- Notification -->
+<div class="store-modal-overlay" id="store-coming-soon-modal">
+    <div class="store-modal-content">
+        <button class="store-modal-close" id="close-modal-btn" aria-label="Cerrar ventana">&times;</button>
+        
+        <div class="store-modal-text">
+            <h2>Próximamente</h2>
+            <p>Nuestra tienda en línea y productos aún no están disponibles. Estamos preparando fórmulas excepcionales para ti.</p>
+            <button class="store-modal-action" id="close-modal-action-btn">Entendido</button>
+        </div>
+    </div>
+</div>
+</main>
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-logo-contact">
+                <img src="images/logo.png" alt="DTRE Logo" class="footer-logo">
+                <div class="footer-social">
+                    <a href="#"><img src="images/facebook.png" alt="Facebook"></a>
+                    <a href="#"><img src="images/instagram.png" alt="Instagram"></a>
+                    <a href="#"><img src="images/whatsapp.png" alt="Whatapp"></a>
+            </div>
+                <a href="formulario.html" class="contact-button">Contactanos</a>
+            </div>
+            <div class="footer-links">
+                <div>
+                    <h4>Sobre Nosotros</h4>
+                    <ul>
+                        <li><a href="aboutus.html">Nuestra Historia</a></li>
+                        <li><a href="aboutus.html">Nuestra Misión</a></li>
+                        <li><a href="aboutus.html">Quiénes Somos</a></li>
+                        <li><a href="aboutus.html">Fundadora</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Productos</h4>
+                    <ul>
+                        <li><a href="lukaraS.html">Lukara - Serum</a></li>
+                        <li><a href="lukaraD.html">Lukara - Day</a></li>
+                        <li><a href="lukaraN.html">Lukara - Night</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Recursos</h4>
+                    <ul>
+                        <li><a href="faq.html">Preguntas Frecuentes</a></li>
+                        <li><a href="#">Anuncios</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Beta</h4>
+                    <ul>
+                        <li><a href="formulario.html">Mandar Sugerencias</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-legal">
+            <a href="legal.html">Nota Legal</a> |
+            <a href="legal.html">Política de Privacidad</a> |
+            <a href="legal.html">Política de Cookies</a>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
